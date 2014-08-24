@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\lua">
+      <UniqueIdentifier>{3207883a-9b56-4c3b-b34b-531d05510179}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\lua">
+      <UniqueIdentifier>{a03d9cd2-aa3e-4542-99e7-7a078a36bd33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\procedural_content">
+      <UniqueIdentifier>{12535946-8664-461f-9639-9f881a7ac039}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\procedural_content\custom_meshes">
+      <UniqueIdentifier>{6af49fef-baf8-4cf3-9889-6527ee4b27a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\procedural_content">
+      <UniqueIdentifier>{2fdf5412-eae1-4cb2-8193-9b8615285f1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\procedural_content\custom_meshes">
+      <UniqueIdentifier>{565bfc21-bd00-452f-aed3-0fc64065d005}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\procedural_content\textures">
+      <UniqueIdentifier>{6be65aee-82f2-4db7-a0a6-730d80e7f80d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\procedural_content\textures">
+      <UniqueIdentifier>{baaef598-e308-44dd-bf8e-d1ae2c0c5867}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\procedural_content\shaders">
+      <UniqueIdentifier>{cb3df96b-2af9-4b57-a23c-530792fc1a99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\procedural_content\shaders">
+      <UniqueIdentifier>{dd8e52c3-9494-4c55-b07d-d9095ebf11f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\procedural_content\city">
+      <UniqueIdentifier>{00c8a5da-0cc9-46c6-9964-8be4346c92ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\procedural_content\city\builders">
+      <UniqueIdentifier>{542ef099-b47b-41a9-b15a-2341130d09a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\procedural_content\city">
+      <UniqueIdentifier>{7a643e8c-2b20-4f30-b17f-7ce263e6c736}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\procedural_content\city\builders">
+      <UniqueIdentifier>{d44c63f7-4823-4df2-a808-b636bae9b761}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="procedural_city.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MeshBuilder.h">
+      <Filter>Header Files\procedural_content\custom_meshes</Filter>
+    </ClInclude>
+    <ClInclude Include="CustomNode.h">
+      <Filter>Header Files\procedural_content\custom_meshes</Filter>
+    </ClInclude>
+    <ClInclude Include="ScriptedNodeBuilder.h">
+      <Filter>Header Files\procedural_content\custom_meshes</Filter>
+    </ClInclude>
+    <ClInclude Include="LuaScript.h">
+      <Filter>Header Files\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="ScriptedTextureBuilder.h">
+      <Filter>Header Files\procedural_content\textures</Filter>
+    </ClInclude>
+    <ClInclude Include="Shader.h">
+      <Filter>Header Files\procedural_content\shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="GlslShader.h">
+      <Filter>Header Files\procedural_content\shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="IDRequester.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileBuilder.h">
+      <Filter>Header Files\procedural_content\city\builders</Filter>
+    </ClInclude>
+    <ClInclude Include="ProceduralTile.h">
+      <Filter>Header Files\procedural_content\city</Filter>
+    </ClInclude>
+    <ClInclude Include="City.h">
+      <Filter>Header Files\procedural_content\city</Filter>
+    </ClInclude>
+    <ClInclude Include="Random.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CLTextureBuilder.h">
+      <Filter>Header Files\procedural_content\textures</Filter>
+    </ClInclude>
+    <ClInclude Include="Resources.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PopulationMap.h">
+      <Filter>Header Files\procedural_content\city</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MeshBuilder.cpp">
+      <Filter>Source Files\procedural_content\custom_meshes</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomNode.cpp">
+      <Filter>Source Files\procedural_content\custom_meshes</Filter>
+    </ClCompile>
+    <ClCompile Include="ScriptedNodeBuilder.cpp">
+      <Filter>Source Files\procedural_content\custom_meshes</Filter>
+    </ClCompile>
+    <ClCompile Include="LuaScript.cpp">
+      <Filter>Source Files\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="ScriptedTextureBuilder.cpp">
+      <Filter>Source Files\procedural_content\textures</Filter>
+    </ClCompile>
+    <ClCompile Include="GlslShader.cpp">
+      <Filter>Source Files\procedural_content\shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="IDRequester.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileBuilder.cpp">
+      <Filter>Source Files\procedural_content\city\builders</Filter>
+    </ClCompile>
+    <ClCompile Include="ProceduralTile.cpp">
+      <Filter>Source Files\procedural_content\city</Filter>
+    </ClCompile>
+    <ClCompile Include="Random.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="City.cpp">
+      <Filter>Source Files\procedural_content\city</Filter>
+    </ClCompile>
+    <ClCompile Include="CLTextureBuilder.cpp">
+      <Filter>Source Files\procedural_content\textures</Filter>
+    </ClCompile>
+    <ClCompile Include="Resources.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PopulationMap.cpp">
+      <Filter>Source Files\procedural_content\city</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

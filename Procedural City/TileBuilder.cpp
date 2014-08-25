@@ -2,9 +2,9 @@
 
 ScriptedNodeBuilder TileBuilder::_flatBuilder;
 
-ScriptedNodeBuilder TileBuilder::_houseBuilders[1];
-ScriptedNodeBuilder TileBuilder::_skyScraperBuilders[1];
-ScriptedNodeBuilder TileBuilder::_apartmentBuilders[1];
+std::vector<ScriptedNodeBuilder> TileBuilder::_houseBuilders(1);
+std::vector<ScriptedNodeBuilder> TileBuilder::_skyScraperBuilders(1);
+std::vector<ScriptedNodeBuilder> TileBuilder::_apartmentBuilders(1);
 
 ScriptedNodeBuilder TileBuilder::_grass;
 
@@ -22,7 +22,7 @@ void TileBuilder::initialize()
 {
 	_flatBuilder.load("models/flat_tile");
 
-	_houseBuilders[0].load("models/house");
+	_houseBuilders[0].load("models/houses/red_house");
 	_skyScraperBuilders[0].load("models/skyscraper");
 	_apartmentBuilders[0].load("models/apartment/building");
 
@@ -59,7 +59,7 @@ void TileBuilder::addFlat(irr::core::vector3df position, float angle)
 //Buildings
 void TileBuilder::addHouse(irr::core::vector3df position, float angle)
 {
-	irr::scene::ISceneNode* node = _houseBuilders[Random::nextInt(0,0)].build(_sceneManager, _tileSceneNode, _idPool.request());
+	irr::scene::ISceneNode* node = _houseBuilders[Random::nextInt(0,_houseBuilders.size()-1)].build(_sceneManager, _tileSceneNode, _idPool.request());
 	_tileSceneNode->addChild(node);
 	node->setScale(irr::core::vector3df(10,10,10));
 	node->setRotation(irr::core::vector3df(0,angle,0));
@@ -69,7 +69,7 @@ void TileBuilder::addHouse(irr::core::vector3df position, float angle)
 
 void TileBuilder::addSkyScraper(irr::core::vector3df position, float angle)
 {
-	irr::scene::ISceneNode* node = _skyScraperBuilders[Random::nextInt(0,0)].build(_sceneManager, _tileSceneNode, _idPool.request());
+	irr::scene::ISceneNode* node = _skyScraperBuilders[Random::nextInt(0, _skyScraperBuilders.size()-1)].build(_sceneManager, _tileSceneNode, _idPool.request());
 	_tileSceneNode->addChild(node);
 	node->setRotation(irr::core::vector3df(0,angle,0));
 	node->setPosition(position);
@@ -78,7 +78,7 @@ void TileBuilder::addSkyScraper(irr::core::vector3df position, float angle)
 
 void TileBuilder::addApartment(irr::core::vector3df position, float angle)
 {
-	irr::scene::ISceneNode* node = _apartmentBuilders[Random::nextInt(0,0)].build(_sceneManager, _tileSceneNode, _idPool.request());
+	irr::scene::ISceneNode* node = _apartmentBuilders[Random::nextInt(0, _apartmentBuilders.size()-1)].build(_sceneManager, _tileSceneNode, _idPool.request());
 	_tileSceneNode->addChild(node);
 	node->setRotation(irr::core::vector3df(0,angle,0));
 	node->setPosition(position);

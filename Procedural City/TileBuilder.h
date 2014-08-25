@@ -17,9 +17,9 @@ private:
 	static ScriptedNodeBuilder _flatBuilder;
 
 	//Buildings
-	static ScriptedNodeBuilder _houseBuilders[1];
-	static ScriptedNodeBuilder _skyScraperBuilders[1];
-	static ScriptedNodeBuilder _apartmentBuilders[1];
+	static std::vector<ScriptedNodeBuilder> _houseBuilders;
+	static std::vector<ScriptedNodeBuilder> _skyScraperBuilders;
+	static std::vector<ScriptedNodeBuilder> _apartmentBuilders;
 
 	//Plants
 	static ScriptedNodeBuilder _grass;

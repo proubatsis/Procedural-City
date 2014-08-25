@@ -2,9 +2,9 @@
 
 ScriptedNodeBuilder TileBuilder::_flatBuilder;
 
-std::vector<ScriptedNodeBuilder> TileBuilder::_houseBuilders(1);
+std::vector<ScriptedNodeBuilder> TileBuilder::_houseBuilders(3);
 std::vector<ScriptedNodeBuilder> TileBuilder::_skyScraperBuilders(1);
-std::vector<ScriptedNodeBuilder> TileBuilder::_apartmentBuilders(1);
+std::vector<ScriptedNodeBuilder> TileBuilder::_apartmentBuilders(3);
 
 ScriptedNodeBuilder TileBuilder::_grass;
 
@@ -23,8 +23,14 @@ void TileBuilder::initialize()
 	_flatBuilder.load("models/flat_tile");
 
 	_houseBuilders[0].load("models/houses/red_house");
+	_houseBuilders[1].load("models/houses/white_house");
+	_houseBuilders[2].load("models/houses/brown_house");
+
 	_skyScraperBuilders[0].load("models/skyscraper");
-	_apartmentBuilders[0].load("models/apartment/building");
+
+	_apartmentBuilders[0].load("models/apartment/red");
+	_apartmentBuilders[1].load("models/apartment/white");
+	_apartmentBuilders[2].load("models/apartment/brown");
 
 	_grass.load("models/plants/grass");
 

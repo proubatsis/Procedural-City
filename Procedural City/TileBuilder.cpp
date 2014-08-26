@@ -3,7 +3,7 @@
 ScriptedNodeBuilder TileBuilder::_flatBuilder;
 
 std::vector<ScriptedNodeBuilder> TileBuilder::_houseBuilders(3);
-std::vector<ScriptedNodeBuilder> TileBuilder::_skyScraperBuilders(1);
+std::vector<ScriptedNodeBuilder> TileBuilder::_skyScraperBuilders(2);
 std::vector<ScriptedNodeBuilder> TileBuilder::_apartmentBuilders(3);
 
 ScriptedNodeBuilder TileBuilder::_grass;
@@ -26,7 +26,8 @@ void TileBuilder::initialize()
 	_houseBuilders[1].load("models/houses/white_house");
 	_houseBuilders[2].load("models/houses/brown_house");
 
-	_skyScraperBuilders[0].load("models/skyscraper");
+	_skyScraperBuilders[0].load("models/skyscrapers/skyscraper");
+	_skyScraperBuilders[1].load("models/skyscrapers/skyscraper2");
 
 	_apartmentBuilders[0].load("models/apartment/red");
 	_apartmentBuilders[1].load("models/apartment/white");

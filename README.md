@@ -5,4 +5,4 @@ It has been compiled using Microsoft Visual C++ 2010 but should compile under g+
 Sample City Render (August 2014):
 ![Untitled.png](https://bitbucket.org/repo/orgAxj/images/827147666-Untitled.png)
 
--Panagiotis Roubatsis
+Copyright 2014 Peter Panagiotis Roubatsis

@@ -81,8 +81,14 @@ void generateAllTextures(video::IVideoDriver* driver)
 	CLTextureBuilder b;
 
 	const int SIZE = 512;
-	b.run(SIZE, SIZE, "bricks");
-	b.getTexture(driver, "bricks.tex");
+
+	b.run(SIZE, SIZE, "bricks/red");
+	b.getTexture(driver, "bricks.red.tex");
+	b.run(SIZE, SIZE, "bricks/white");
+	b.getTexture(driver, "bricks.white.tex");
+	b.run(SIZE, SIZE, "bricks/brown");
+	b.getTexture(driver, "bricks.brown.tex");
+
 	b.run(SIZE, SIZE, "roof");
 	b.getTexture(driver, "roof.tex");
 
@@ -93,8 +99,11 @@ void generateAllTextures(video::IVideoDriver* driver)
 	b.getTexture(driver, "windows.window.tex");
 	b.run(SIZE, SIZE, "windows/apartment");
 	b.getTexture(driver, "windows.apartment.tex");
+
 	b.run(SIZE, SIZE, "windows/skyscraper");
 	b.getTexture(driver, "windows.skyscraper.tex");
+	b.run(SIZE, SIZE, "windows/skyscraper2");
+	b.getTexture(driver, "windows.skyscraper2.tex");
 
 	b.run(SIZE, SIZE, "roads/4_way_intersection");
 	b.getTexture(driver, "road.4_way_intersection.tex");

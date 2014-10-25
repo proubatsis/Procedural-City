@@ -1,11 +1,10 @@
 #include "PopulationMap.h"
 #include "Random.h"
 #include <functional>
-#include <tuple>
 
 std::vector<std::vector<float> > Procedural::Map::generatePopulationMap(const int& width, const int& height)
 {
-	const float SCALE = 1.05f;	//Used to scale the coordinates to zoom in and out of the noise
+	const float SCALE = 1.25f;	//Used to scale the coordinates to zoom in and out of the noise
 
 	//Linear interpolation
 	std::function<float(float,float,float)> lerp = [](float a, float b, float t) -> float {return t * (b-a) + a;};

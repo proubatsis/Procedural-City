@@ -56,7 +56,7 @@ City::City(scene::ISceneManager* sceneManager)
 					{
 						_tiles[x][y] = APARTMENT;
 					}
-				}else if(p > -0.02)
+				}else if(p > -0.04)
 				{
 					_tiles[x][y] = HOUSES;
 				}else

@@ -65,7 +65,7 @@ end
 
 --4 Walls
 createNode()
-setTexture("bricks.tex")
+setTexture("bricks.red.tex")
 
 createQuad(-0.5,0,0.5, 0,1,0, 1,0,0)		--Front Wall
 createQuad(0.5,0,-0.5, 0,1,0, -1,0,0)	--Back Wall

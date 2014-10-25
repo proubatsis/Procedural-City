@@ -70,7 +70,7 @@ end
 
 --4 Walls
 createNode()
-setTexture("bricks.tex")
+setTexture("bricks.red.tex")
 
 createQuadUV(-0.5,0,0.25, 0,1,0, 1,0,0, 3,1)		--Front Wall
 createQuadUV(0.5,0,-0.25, 0,1,0, -1,0,0, 3,1)	--Back Wall

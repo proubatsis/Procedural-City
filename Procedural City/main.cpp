@@ -43,24 +43,10 @@ int main()
 	gui::IGUIEnvironment* guiEnvironment = device->getGUIEnvironment();
 
 	sceneManager->addCameraSceneNodeFPS();
-	//sceneManager->addCameraSceneNode(sceneManager->getRootSceneNode(), core::vector3df(0, 0, 32), core::vector3df(0, 0, 0));
 	sceneManager->setAmbientLight(irr::video::SColorf(0.8f, 0.8f, 0.8f, 1.0f));
 
 	generateAllTextures(driver);
 	City city(sceneManager);
-
-	/*gui::IGUIFont* font = guiEnvironment->getFont("fonts/arial.xml");
-	video::ITexture* rt = driver->addRenderTargetTexture(core::dimension2du(512,256), "km.tex");
-
-	driver->setRenderTarget(rt);
-	font->draw("Kwik-E-Mart", core::recti(0,0,512,256), video::SColor(255,255,0,0), true, true);
-	driver->setRenderTarget(0);
-	
-	ScriptedNodeBuilder b("models/apartment/building");
-	CustomNode* node = b.build(sceneManager, sceneManager->getRootSceneNode(), 534);
-	//node->setScale(core::vector3df(30,10,15));
-
-	node->drop();*/
 
 	while(device->run())
 	{

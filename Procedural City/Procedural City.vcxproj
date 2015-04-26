@@ -93,7 +93,6 @@
     <ClInclude Include="Random.h" />
     <ClInclude Include="Resources.h" />
     <ClInclude Include="ScriptedNodeBuilder.h" />
-    <ClInclude Include="ScriptedTextureBuilder.h" />
     <ClInclude Include="Shader.h" />
     <ClInclude Include="TileBuilder.h" />
   </ItemGroup>
@@ -111,7 +110,6 @@
     <ClCompile Include="Random.cpp" />
     <ClCompile Include="Resources.cpp" />
     <ClCompile Include="ScriptedNodeBuilder.cpp" />
-    <ClCompile Include="ScriptedTextureBuilder.cpp" />
     <ClCompile Include="TileBuilder.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -72,9 +72,6 @@
     <ClInclude Include="LuaScript.h">
       <Filter>Header Files\lua</Filter>
     </ClInclude>
-    <ClInclude Include="ScriptedTextureBuilder.h">
-      <Filter>Header Files\procedural_content\textures</Filter>
-    </ClInclude>
     <ClInclude Include="Shader.h">
       <Filter>Header Files\procedural_content\shaders</Filter>
     </ClInclude>
@@ -121,9 +118,6 @@
     </ClCompile>
     <ClCompile Include="LuaScript.cpp">
       <Filter>Source Files\lua</Filter>
-    </ClCompile>
-    <ClCompile Include="ScriptedTextureBuilder.cpp">
-      <Filter>Source Files\procedural_content\textures</Filter>
     </ClCompile>
     <ClCompile Include="GlslShader.cpp">
       <Filter>Source Files\procedural_content\shaders</Filter>

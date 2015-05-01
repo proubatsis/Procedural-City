@@ -45,7 +45,7 @@ int main()
 	device->setWindowCaption(CAPTION.c_str());
 
 	//Sets the seed for the prng
-	Random::setSeed(10);
+	Random::setSeed(time(NULL));
 	//Must call for the TileBuilder class to function correctly
 	TileBuilder::initialize();
 

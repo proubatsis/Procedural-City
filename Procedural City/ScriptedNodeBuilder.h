@@ -25,9 +25,6 @@ private:
 
 	bool _isBuilt;
 
-	friend int l_createImage(lua_State* L);
-	friend int l_setPixel(lua_State* L);
-
 public:
 	ScriptedNodeBuilder();
 	ScriptedNodeBuilder(std::string scriptFile);

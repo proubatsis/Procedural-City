@@ -4,15 +4,16 @@
 	generated using OpenCL, the models are generated using lua scripts.
 	The roads and city layout are generated using the City class.
 */
+#if _DEBUG
+#include <vld.h>
+#endif
 
-#include "procedural_city.h"
 #include <iostream>
 #include <irrlicht.h>
 #include "Random.h"
 #include "TileBuilder.h"
 #include "City.h"
 #include "CLTextureBuilder.h"
-#include <vector>
 #include <time.h>
 
 using namespace std;

@@ -89,7 +89,6 @@
     <ClInclude Include="MeshBuilder.h" />
     <ClInclude Include="PopulationMap.h" />
     <ClInclude Include="ProceduralTile.h" />
-    <ClInclude Include="procedural_city.h" />
     <ClInclude Include="Random.h" />
     <ClInclude Include="Resources.h" />
     <ClInclude Include="ScriptedNodeBuilder.h" />

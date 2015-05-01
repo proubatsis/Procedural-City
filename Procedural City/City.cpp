@@ -33,12 +33,15 @@ City::City(scene::ISceneManager* sceneManager)
 
 	createRoadGraphics(sceneManager);
 
+	//Fill the remaining empty space with buildings or grass
 	for(int x = 0; x < CITY_X; x++)
 	{
 		for(int y = 0; y < CITY_Y; y++)
 		{
 			if(_tiles[x][y] == EMPTY)
 			{
+				//Determine the contents of the tile based
+				//on the population map.
 				float p = populationMap[y][x];
 				float r = Random::nextFloat();
 				if(p > 0.06f)
@@ -68,8 +71,6 @@ City::City(scene::ISceneManager* sceneManager)
 	}
 
 	createTileGraphics(sceneManager);
-
-	//_citySceneNode->setScale(core::vector3df(10,10,10));
 }
 
 //Recursively divide the grid to generate streets
@@ -307,6 +308,8 @@ void City::createRoadGraphics(scene::ISceneManager* sceneManager)
 
 void City::createTileGraphics(irr::scene::ISceneManager* sceneManager)
 {
+	//Use the tile map to place an appropriate visual representation of
+	//each tile in the city.
 	for(int x = 0; x < CITY_X; x++)
 	{
 		for(int y = 0; y < CITY_Y; y++)

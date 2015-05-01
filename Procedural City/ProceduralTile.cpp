@@ -23,11 +23,14 @@ irr::scene::ISceneNode* Procedural::Tile::generateHouses(irr::scene::ISceneManag
 {
 	TileBuilder tb(sceneManager);
 	tb.addGrass(core::vector3df(0,0,0), 0);
+
+	//Place a group of houses on a single tile
 	for(int z = -11; z <= 11; z += 11)
 	{
 		tb.addHouse(core::vector3df(11,0.15f,z), -90);
 		tb.addHouse(core::vector3df(-11,0.15f,z), 90);
 	}
+
 	return tb.getNode();
 }
 
@@ -80,6 +83,8 @@ scene::ISceneNode* Procedural::Tile::generateTwoLaneAndHouses(scene::ISceneManag
 {
 	TileBuilder tb(sceneManager);
 	tb.addTwoLaneRoad(core::vector3df(0,0,0),0);
+
+	//Place a group of houses on each side of the two lane road
 	for(int z = -11; z <= 11; z += 11)
 	{
 		tb.addHouse(core::vector3df(11,0.15f,z), -90);
@@ -93,9 +98,9 @@ scene::ISceneNode* Procedural::Tile::generateTwoToSixTAndHouses(scene::ISceneMan
 {
 	TileBuilder tb(sceneManager);
 	tb.addTwoToSixTRoad(core::vector3df(0,0,0),0);
+
 	for(int z = -11; z <= 11; z += 11)
 	{
-		//tb.addHouse(core::vector3df(11,0.15f,z), -90);
 		tb.addHouse(core::vector3df(-11,0.15f,z), 90);
 	}
 

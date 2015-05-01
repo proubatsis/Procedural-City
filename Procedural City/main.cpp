@@ -18,16 +18,19 @@
 using namespace std;
 using namespace irr;
 
+//Uses CLTextureBuilder to load and run all the OpenCL files
+//to generate the textures that are to be used in the city.
 void generateAllTextures(video::IVideoDriver* driver);
 
 int main()
 {
+	//Configure irrlicht device
 	const video::E_DRIVER_TYPE VIDEO_DRIVER = video::EDT_OPENGL;
 	const bool FULLSCREEN = false;
 	const bool VSYNC = false;
 	const core::dimension2du WINDOW_DIMENSIONS(1280, 720);
 
-	const wstring CAPTION = L"Procedural City";
+	const wstring CAPTION = L"Procedural City - By: Panagiotis Roubatsis";
 	const video::SColor BACKGROUND_COLOR(255, 100, 200, 100);
 	
 	IrrlichtDevice* device = createDevice(VIDEO_DRIVER, WINDOW_DIMENSIONS, 16, FULLSCREEN, false, VSYNC, 0);
@@ -49,6 +52,7 @@ int main()
 	scene::ISceneManager* sceneManager = device->getSceneManager();
 	gui::IGUIEnvironment* guiEnvironment = device->getGUIEnvironment();
 
+	//Add a first person camera that is controllable using the mouse and arrow keys
 	sceneManager->addCameraSceneNodeFPS();
 	sceneManager->setAmbientLight(irr::video::SColorf(0.8f, 0.8f, 0.8f, 1.0f));
 
@@ -75,6 +79,7 @@ void generateAllTextures(video::IVideoDriver* driver)
 
 	const int SIZE = 512;
 
+	//Bricks
 	b.run(SIZE, SIZE, "bricks/red");
 	b.getTexture(driver, "bricks.red.tex");
 	b.run(SIZE, SIZE, "bricks/white");
@@ -82,22 +87,27 @@ void generateAllTextures(video::IVideoDriver* driver)
 	b.run(SIZE, SIZE, "bricks/brown");
 	b.getTexture(driver, "bricks.brown.tex");
 
+	//Roof
 	b.run(SIZE, SIZE, "roof");
 	b.getTexture(driver, "roof.tex");
 
+	//Plants
 	b.run(SIZE, SIZE, "plants/grass");
 	b.getTexture(driver, "plants.grass.tex");
 
+	//Windows
 	b.run(SIZE, SIZE, "windows/window");
 	b.getTexture(driver, "windows.window.tex");
 	b.run(SIZE, SIZE, "windows/apartment");
 	b.getTexture(driver, "windows.apartment.tex");
 
+	//Skyscrapers
 	b.run(SIZE, SIZE, "windows/skyscraper");
 	b.getTexture(driver, "windows.skyscraper.tex");
 	b.run(SIZE, SIZE, "windows/skyscraper2");
 	b.getTexture(driver, "windows.skyscraper2.tex");
 
+	//Roads
 	b.run(SIZE, SIZE, "roads/4_way_intersection");
 	b.getTexture(driver, "road.4_way_intersection.tex");
 	b.run(SIZE, SIZE, "roads/6_6_T_intersection");

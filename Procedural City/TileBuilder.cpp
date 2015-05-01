@@ -20,6 +20,7 @@ ScriptedNodeBuilder TileBuilder::_sixLaneIntersection;
 
 void TileBuilder::initialize()
 {
+	//Load the various lua scripts required to build tiles
 	_flatBuilder.load("models/flat_tile");
 
 	_houseBuilders[0].load("models/houses/red_house");

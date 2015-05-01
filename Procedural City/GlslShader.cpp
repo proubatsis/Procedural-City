@@ -17,6 +17,9 @@ void GlslShader::load(std::string fileName, irr::video::IGPUProgrammingServices*
 	std::string fragFile = "";
 	std::string vertFile = "";
 	
+	//Adjust file with shader sub-folder and
+	//the appropriate file extensions.
+
 	if((type & Shader::TYPE_PIXEL) != 0)
 	{
 		fragFile = "shaders/glsl/";

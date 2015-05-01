@@ -1,3 +1,10 @@
+/*
+	Created by Panagiotis Roubatsis
+	Description: Uses the built in mersenne twister
+	random number generator. It allows you to set a seed,
+	generate a floating point number, or generate an integer.
+*/
+
 #ifndef RANDOM_H
 #define RANDOM_H
 

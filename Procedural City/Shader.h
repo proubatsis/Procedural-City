@@ -1,3 +1,10 @@
+/*
+	Created by Panagiotis Roubatsis
+	Description: An abstract class which
+	can be used for loading and applying
+	shaders to irrlicht nodes.
+*/
+
 #ifndef SHADER_H
 #define SHADER_H
 

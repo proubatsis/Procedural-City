@@ -1,3 +1,11 @@
+/*
+	Created by Panagiotis Roubatsis
+	Description: Generate textures for the 3D models
+	using OpenCL. By using OpenCL the process of generating
+	the textures is faster since it calculates each
+	pixel of the texture in parallel on the GPU.
+*/
+
 #ifndef CL_TEXTURE_BUILDER_H
 #define CL_TEXTURE_BUILDER_H
 

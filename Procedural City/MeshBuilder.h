@@ -1,3 +1,8 @@
+/*
+	Created by Panagiotis Roubatsis
+	Description: Used to build a 3D model.
+*/
+
 #ifndef MESH_BUILDER_H
 #define MESH_BUILDER_H
 

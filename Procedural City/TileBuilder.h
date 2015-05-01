@@ -1,3 +1,10 @@
+/*
+	Created by Panagiotis Roubatsis
+	Description: Builds a tile to be rendered in the
+	city. A tile is built of various models generated
+	via lua.
+*/
+
 #ifndef TILE_BUILDER_H
 #define TILE_BUILDER_H
 

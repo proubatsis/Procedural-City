@@ -1,3 +1,9 @@
+/*
+	Created by Panagiotis Roubatsis
+	Description: Provides functionality for lua
+	to build 3D models for the city to use.
+*/
+
 #ifndef SCRIPTED_NODE_BUILDER_H
 #define SCRIPTED_NODE_BUILDER_H
 

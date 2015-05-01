@@ -1,3 +1,8 @@
+/*
+	Created by Panagiotis Roubatsis
+	Description: A custom irrlicht node.
+*/
+
 #ifndef CUSTOM_NODE
 #define CUSTOM_NODE
 

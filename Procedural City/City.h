@@ -1,3 +1,10 @@
+/*
+	Created by Panagiotis Roubatsis
+	Description: The class that handles generating the city,
+	including the roads and positioning of the various tiles
+	that make up the city.
+*/
+
 #ifndef CITY_H
 #define CITY_H
 

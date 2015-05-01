@@ -1,3 +1,9 @@
+/*
+	Created by Panagiotis Roubatsis
+	Description: Allow lua files to be run, and given access
+	to C++ functions.
+*/
+
 #ifndef LUA_SCRIPT_H
 #define LUA_SCRIPT_H
 

@@ -1,3 +1,10 @@
+/*
+	Created by Panagiotis Roubatsis
+	Description: A procedurally generated city. The textures are
+	generated using OpenCL, the models are generated using lua scripts.
+	The roads and city layout are generated using the City class.
+*/
+
 #include "procedural_city.h"
 #include <iostream>
 #include <irrlicht.h>

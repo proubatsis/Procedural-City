@@ -1,3 +1,9 @@
+/*
+	Created by Panagiotis Roubatsis
+	Description: Load and apply GLSL shaders
+	to irrlicht nodes.
+*/
+
 #ifndef GLSL_SHADER_H
 #define GLSL_SHADER_H
 

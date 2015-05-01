@@ -1,3 +1,8 @@
+/*
+	Created by Panagiotis Roubatsis
+	Description: Generates tiles for use by the city class.
+*/
+
 #ifndef PROCEDURAL_TILE_H
 #define PROCEDURAL_TILE_H
 

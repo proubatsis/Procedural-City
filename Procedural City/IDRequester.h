@@ -1,3 +1,9 @@
+/*
+	Created by Panagiotis Roubatsis
+	Description: Assigns IDs for objects to be
+	rendered by irrlicht.
+*/
+
 #ifndef ID_REQUESTER_H
 #define ID_REQUESTER_H
 

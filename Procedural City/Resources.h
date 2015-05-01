@@ -1,3 +1,8 @@
+/*
+	Created by Panagiotis Roubatsis
+	Description: Loads external resources.
+*/
+
 #ifndef RESOURCES_H
 #define RESOURCES_H
 

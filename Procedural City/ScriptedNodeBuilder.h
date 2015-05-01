@@ -16,15 +16,6 @@
 
 class ScriptedNodeBuilder
 {
-private:
-	struct LuaSceneGraphNode;
-
-	LuaScript _script;
-
-	std::vector<LuaSceneGraphNode> _graphNodes;
-
-	bool _isBuilt;
-
 public:
 	ScriptedNodeBuilder();
 	ScriptedNodeBuilder(std::string scriptFile);
@@ -46,6 +37,10 @@ public:
 		irr::core::vector3df rotation;
 	};
 
+private:
+	LuaScript _script;
+	std::vector<LuaSceneGraphNode> _graphNodes;
+	bool _isBuilt;
 };
 
 #endif

@@ -344,7 +344,7 @@ void City::addTile(scene::ISceneNode* node, core::vector3di positionRotation)
 {
 	const float TILE_SIZE = 32;
 	core::vector3df position(positionRotation.X * TILE_SIZE, 0, positionRotation.Y * TILE_SIZE);
-	core::vector3df rotation(0, positionRotation.Z, 0);
+	core::vector3df rotation(0, (float)positionRotation.Z, 0);
 
 	node->setPosition(position);
 	node->setRotation(rotation);

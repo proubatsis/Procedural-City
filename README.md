@@ -1,6 +1,7 @@
 # Procedural-City
 A procedurally generated city. It uses OpenCL and Lua to generate textures and 3D models.
-The irrlicht rendering engine is used to render the city.
+The irrlicht rendering engine is used to render the city. There are no pre-made assets, all
+the models and textures are generated when the application starts.
 
 #Libraries
 OpenCL, Lua, Irrlicht

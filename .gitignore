@@ -6,3 +6,5 @@ Procedural City.opensdf
 Procedural City.sdf
 Procedural City.suo
 Procedural City/libraries/
+*.py
+Procedural City/header.txt

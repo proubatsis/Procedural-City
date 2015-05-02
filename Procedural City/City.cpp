@@ -1,3 +1,21 @@
+/*
+    Copyright (C) 2015 Panagiotis Roubatsis
+
+    This program is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 2 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License along
+    with this program; if not, write to the Free Software Foundation, Inc.,
+    51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+*/
+
 #include "City.h"
 #include "PopulationMap.h"
 #include <functional>
@@ -33,12 +51,15 @@ City::City(scene::ISceneManager* sceneManager)
 
 	createRoadGraphics(sceneManager);
 
+	//Fill the remaining empty space with buildings or grass
 	for(int x = 0; x < CITY_X; x++)
 	{
 		for(int y = 0; y < CITY_Y; y++)
 		{
 			if(_tiles[x][y] == EMPTY)
 			{
+				//Determine the contents of the tile based
+				//on the population map.
 				float p = populationMap[y][x];
 				float r = Random::nextFloat();
 				if(p > 0.06f)
@@ -68,8 +89,6 @@ City::City(scene::ISceneManager* sceneManager)
 	}
 
 	createTileGraphics(sceneManager);
-
-	//_citySceneNode->setScale(core::vector3df(10,10,10));
 }
 
 //Recursively divide the grid to generate streets
@@ -307,6 +326,8 @@ void City::createRoadGraphics(scene::ISceneManager* sceneManager)
 
 void City::createTileGraphics(irr::scene::ISceneManager* sceneManager)
 {
+	//Use the tile map to place an appropriate visual representation of
+	//each tile in the city.
 	for(int x = 0; x < CITY_X; x++)
 	{
 		for(int y = 0; y < CITY_Y; y++)
@@ -341,7 +362,7 @@ void City::addTile(scene::ISceneNode* node, core::vector3di positionRotation)
 {
 	const float TILE_SIZE = 32;
 	core::vector3df position(positionRotation.X * TILE_SIZE, 0, positionRotation.Y * TILE_SIZE);
-	core::vector3df rotation(0, positionRotation.Z, 0);
+	core::vector3df rotation(0, (float)positionRotation.Z, 0);
 
 	node->setPosition(position);
 	node->setRotation(rotation);

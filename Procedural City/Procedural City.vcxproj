@@ -50,12 +50,12 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\Libraries\Documents\CPP Libraries\OpenCL\inc;D:\Libraries\Documents\CPP Libraries\LUA\include;D:\Programs\Visual Leak Detector\include;D:\Libraries\Documents\CPP Libraries\IrrLicht\irrlicht-1.8.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)\libraries\opencl\include;$(ProjectDir)\libraries\lua\include;$(ProjectDir)\libraries\vld\include;$(ProjectDir)\libraries\irrlicht\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>D:\Libraries\Documents\CPP Libraries\OpenCL\lib\Win32;D:\Libraries\Documents\CPP Libraries\LUA\lib;D:\Programs\Visual Leak Detector\lib\Win32;D:\Libraries\Documents\CPP Libraries\IrrLicht\irrlicht-1.8.1\lib\Win32-visualstudio;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(ProjectDir)\libraries\opencl\lib\;$(ProjectDir)\libraries\lua\lib;$(ProjectDir)\libraries\vld\lib\;$(ProjectDir)\libraries\irrlicht\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>Irrlicht.lib;LUA.lib;OpenCL.lib;vld.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -68,14 +68,14 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\Libraries\Documents\CPP Libraries\OpenCL\inc;D:\Libraries\Documents\CPP Libraries\LUA\include;D:\Libraries\Documents\CPP Libraries\IrrLicht\irrlicht-1.8.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)\libraries\opencl\include;$(ProjectDir)\libraries\lua\include;$(ProjectDir)\libraries\irrlicht\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>D:\Libraries\Documents\CPP Libraries\OpenCL\lib\Win32;D:\Libraries\Documents\CPP Libraries\LUA\lib;D:\Libraries\Documents\CPP Libraries\IrrLicht\irrlicht-1.8.1\lib\Win32-visualstudio;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(ProjectDir)\libraries\opencl\lib\;$(ProjectDir)\libraries\lua\lib;D:\Libraries\Documents\CPP Libraries\IrrLicht\irrlicht-1.8.1\lib\Win32-visualstudio;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>Irrlicht.lib;LUA.lib;OpenCL.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -89,11 +89,9 @@
     <ClInclude Include="MeshBuilder.h" />
     <ClInclude Include="PopulationMap.h" />
     <ClInclude Include="ProceduralTile.h" />
-    <ClInclude Include="procedural_city.h" />
     <ClInclude Include="Random.h" />
     <ClInclude Include="Resources.h" />
     <ClInclude Include="ScriptedNodeBuilder.h" />
-    <ClInclude Include="ScriptedTextureBuilder.h" />
     <ClInclude Include="Shader.h" />
     <ClInclude Include="TileBuilder.h" />
   </ItemGroup>
@@ -111,7 +109,6 @@
     <ClCompile Include="Random.cpp" />
     <ClCompile Include="Resources.cpp" />
     <ClCompile Include="ScriptedNodeBuilder.cpp" />
-    <ClCompile Include="ScriptedTextureBuilder.cpp" />
     <ClCompile Include="TileBuilder.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

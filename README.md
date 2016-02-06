@@ -6,8 +6,10 @@ the models and textures are generated when the application starts.
 #Libraries
 OpenCL, Lua, Irrlicht
 
-#Screenshot
+#Screenshots
 ![Screenshot](/screenshot.png?raw=true)
+
+![Screenshot](/screenshot_ground_level.png?raw=true)
 
 #License
 GPL
